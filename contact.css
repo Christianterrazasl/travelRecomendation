@@ -112,35 +112,37 @@ body{
     max-width: 30%;
 }
 
-#btnBanner{
-    position: absolute;
-    font-size: 2rem;
-    left: 15%;
-    top: 80%;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid white;
-}
 
 #search{
     visibility: hidden;
 }
 
-#crew{
+#contactPanel{
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    top: 50%;
     left: 70%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-    top: 50%;
+    font-size: 2rem;
+    background-color: #3335b3;
+    border-radius: 20px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    border: 2px solid white
 }
 
-.worker{
-    background-color: #3335b3;
+#contactPanel * {
+    font-size: 1.5rem;
     padding: 10px;
+    margin: 10px;
+}
+
+#contactPanel input, #contactPanel textarea{
+    background-color: transparent;
+    border: 1px solid white;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.205);
+    color: white;
 }
