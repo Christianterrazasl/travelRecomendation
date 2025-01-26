@@ -11,7 +11,10 @@
     searchInput.addEventListener('input', (event)=>{
         let results =[];
         resultsDiv.innerHTML="";
+        resultsDiv.style.display='none';
+
         userInput = event.target.value.trim().toLowerCase();
+
         if(userInput==="")return;
         else if(userInput==="country" || userInput==="countries") results= webData.countries;
         else if(userInput==="temple" || userInput==="temples") results= webData.temples;
@@ -43,7 +46,13 @@
             `;
 
             resultsDiv.appendChild(placeDiv);
-        })
+        });
+
+        if(results.length>0){
+            resultsDiv.style.display='block';
+        }
+
+
     })
 
 })();

@@ -121,3 +121,18 @@ body{
     border-radius: 5px;
     border: 1px solid white;
 }
+
+#resultsDiv{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    right: 10%;
+    top: 10%;
+    height: 80vh;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 10%;
+    display: none;
+    padding: 15px;
+}
